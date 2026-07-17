@@ -10,3 +10,4 @@ include:
 Ce fichier lance le bilan de départ complet pour la **Carte de résident**.
 
 1. [🧑‍🏫 Commencer mon bilan](CR25_ACCUEIL)
+
