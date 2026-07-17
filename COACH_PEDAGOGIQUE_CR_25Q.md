@@ -944,7 +944,7 @@ L'école française favorise l'école inclusive. Les élèves en situation de ha
 
 ## CR25_BILAN
 
-### 🎯 Votre bilan de départ
+### 🎉 Bravo ! Votre bilan est terminé
 
 #### Score global
 
@@ -958,133 +958,274 @@ L'école française favorise l'école inclusive. Les élèves en situation de ha
 - Histoire, géographie, patrimoine et culture : **`@score_t4` / 5**
 - Vivre dans la société française : **`@score_t5` / 5**
 
-`if @score >= 20`
+### 🧠 Mon analyse personnalisée
 
-### 🏆 Profil : prêt à consolider
+#### ✅ Vos points forts
 
-Votre niveau global est solide.
+`if @score_t1 == 5`
 
-Votre prochain objectif est de **maintenir au moins 20/25** lors de plusieurs bilans, puis de passer aux examens blancs et aux mises en situation.
-
-`endif`
-
-`if @score >= 15 && @score < 20`
-
-### 🎯 Profil : en progression
-
-Vous disposez déjà de bonnes bases.
-
-### Votre prochain objectif
-
-Atteindre **20/25** en renforçant d’abord les thématiques signalées comme prioritaires.
+- **Principes et valeurs de la République : 5/5, soit 100 %**. Excellent résultat : cette thématique est très bien maîtrisée.
 
 `endif`
 
-`if @score < 15`
+`if @score_t1 == 4`
 
-### 🌱 Profil : début de parcours
-
-Ce résultat constitue un point de départ.
-
-### Votre prochain objectif
-
-Atteindre progressivement **15/25**, puis viser **20/25** après un premier cycle de révision.
-
-Nous vous recommandons de suivre le parcours proposé dans le fichier `GUIDE_REUSSITE.md`.
-
-1. [📅 Consulter le parcours de révision conseillé](CR25_GUIDE)
+- **Principes et valeurs de la République : 4/5, soit 80 %**. C'est un très bon point : cette thématique est déjà bien maîtrisée.
 
 `endif`
 
-### Recommandations personnalisées
+`if @score_t2 == 5`
 
-`if @score_t1 >= 4`
-
-- 🟢 **Principes et valeurs de la République** : niveau satisfaisant. Continuez avec des entraînements.
+- **Système institutionnel et politique : 5/5, soit 100 %**. Excellent résultat : cette thématique est très bien maîtrisée.
 
 `endif`
+
+`if @score_t2 == 4`
+
+- **Système institutionnel et politique : 4/5, soit 80 %**. C'est un très bon point : cette thématique est déjà bien maîtrisée.
+
+`endif`
+
+`if @score_t3 == 5`
+
+- **Droits et devoirs : 5/5, soit 100 %**. Excellent résultat : cette thématique est très bien maîtrisée.
+
+`endif`
+
+`if @score_t3 == 4`
+
+- **Droits et devoirs : 4/5, soit 80 %**. C'est un très bon point : cette thématique est déjà bien maîtrisée.
+
+`endif`
+
+`if @score_t4 == 5`
+
+- **Histoire, géographie, patrimoine et culture : 5/5, soit 100 %**. Excellent résultat : cette thématique est très bien maîtrisée.
+
+`endif`
+
+`if @score_t4 == 4`
+
+- **Histoire, géographie, patrimoine et culture : 4/5, soit 80 %**. C'est un très bon point : cette thématique est déjà bien maîtrisée.
+
+`endif`
+
+`if @score_t5 == 5`
+
+- **Vivre dans la société française : 5/5, soit 100 %**. Excellent résultat : cette thématique est très bien maîtrisée.
+
+`endif`
+
+`if @score_t5 == 4`
+
+- **Vivre dans la société française : 4/5, soit 80 %**. C'est un très bon point : cette thématique est déjà bien maîtrisée.
+
+`endif`
+
+#### 🎯 À consolider
 
 `if @score_t1 == 3`
 
-- 🟡 **Principes et valeurs de la République** : à renforcer. Relisez les notions essentielles puis faites un entraînement ciblé.
-
-`endif`
-
-`if @score_t1 <= 2`
-
-- 🔴 **Principes et valeurs de la République** : priorité de révision. Commencez par les cours correspondants.
-
-`endif`
-
-`if @score_t2 >= 4`
-
-- 🟢 **Système institutionnel et politique** : niveau satisfaisant. Continuez avec des entraînements.
+- **Principes et valeurs de la République : 3/5, soit 60 %**. Votre score est honorable. Quelques révisions ciblées permettront de consolider cette thématique.
 
 `endif`
 
 `if @score_t2 == 3`
 
-- 🟡 **Système institutionnel et politique** : à renforcer. Relisez les notions essentielles puis faites un entraînement ciblé.
-
-`endif`
-
-`if @score_t2 <= 2`
-
-- 🔴 **Système institutionnel et politique** : priorité de révision. Commencez par les cours correspondants.
-
-`endif`
-
-`if @score_t3 >= 4`
-
-- 🟢 **Droits et devoirs** : niveau satisfaisant. Continuez avec des entraînements.
+- **Système institutionnel et politique : 3/5, soit 60 %**. Votre score est honorable. Quelques révisions ciblées permettront de consolider cette thématique.
 
 `endif`
 
 `if @score_t3 == 3`
 
-- 🟡 **Droits et devoirs** : à renforcer. Relisez les notions essentielles puis faites un entraînement ciblé.
-
-`endif`
-
-`if @score_t3 <= 2`
-
-- 🔴 **Droits et devoirs** : priorité de révision. Commencez par les cours correspondants.
-
-`endif`
-
-`if @score_t4 >= 4`
-
-- 🟢 **Histoire, géographie, patrimoine et culture** : niveau satisfaisant. Continuez avec des entraînements.
+- **Droits et devoirs : 3/5, soit 60 %**. Votre score est honorable. Quelques révisions ciblées permettront de consolider cette thématique.
 
 `endif`
 
 `if @score_t4 == 3`
 
-- 🟡 **Histoire, géographie, patrimoine et culture** : à renforcer. Relisez les notions essentielles puis faites un entraînement ciblé.
-
-`endif`
-
-`if @score_t4 <= 2`
-
-- 🔴 **Histoire, géographie, patrimoine et culture** : priorité de révision. Commencez par les cours correspondants.
-
-`endif`
-
-`if @score_t5 >= 4`
-
-- 🟢 **Vivre dans la société française** : niveau satisfaisant. Continuez avec des entraînements.
+- **Histoire, géographie, patrimoine et culture : 3/5, soit 60 %**. Votre score est honorable. Quelques révisions ciblées permettront de consolider cette thématique.
 
 `endif`
 
 `if @score_t5 == 3`
 
-- 🟡 **Vivre dans la société française** : à renforcer. Relisez les notions essentielles puis faites un entraînement ciblé.
+- **Vivre dans la société française : 3/5, soit 60 %**. Votre score est honorable. Quelques révisions ciblées permettront de consolider cette thématique.
 
 `endif`
 
-`if @score_t5 <= 2`
+#### 📚 Vos priorités de révision
 
-- 🔴 **Vivre dans la société française** : priorité de révision. Commencez par les cours correspondants.
+`if @score_t1 == 2`
+
+- **Principes et valeurs de la République : 2/5, soit 40 %**. Cette thématique doit être renforcée en priorité.
+
+`endif`
+
+`if @score_t1 == 1`
+
+- **Principes et valeurs de la République : 1/5, soit 20 %**. Cette thématique fait partie de vos priorités principales.
+
+`endif`
+
+`if @score_t1 == 0`
+
+- **Principes et valeurs de la République : 0/5**. Commencez vos révisions par cette thématique afin d'en acquérir les bases.
+
+`endif`
+
+`if @score_t2 == 2`
+
+- **Système institutionnel et politique : 2/5, soit 40 %**. Cette thématique doit être renforcée en priorité.
+
+`endif`
+
+`if @score_t2 == 1`
+
+- **Système institutionnel et politique : 1/5, soit 20 %**. Cette thématique fait partie de vos priorités principales.
+
+`endif`
+
+`if @score_t2 == 0`
+
+- **Système institutionnel et politique : 0/5**. Commencez vos révisions par cette thématique afin d'en acquérir les bases.
+
+`endif`
+
+`if @score_t3 == 2`
+
+- **Droits et devoirs : 2/5, soit 40 %**. Cette thématique doit être renforcée en priorité.
+
+`endif`
+
+`if @score_t3 == 1`
+
+- **Droits et devoirs : 1/5, soit 20 %**. Cette thématique fait partie de vos priorités principales.
+
+`endif`
+
+`if @score_t3 == 0`
+
+- **Droits et devoirs : 0/5**. Commencez vos révisions par cette thématique afin d'en acquérir les bases.
+
+`endif`
+
+`if @score_t4 == 2`
+
+- **Histoire, géographie, patrimoine et culture : 2/5, soit 40 %**. Cette thématique doit être renforcée en priorité.
+
+`endif`
+
+`if @score_t4 == 1`
+
+- **Histoire, géographie, patrimoine et culture : 1/5, soit 20 %**. Cette thématique fait partie de vos priorités principales.
+
+`endif`
+
+`if @score_t4 == 0`
+
+- **Histoire, géographie, patrimoine et culture : 0/5**. Commencez vos révisions par cette thématique afin d'en acquérir les bases.
+
+`endif`
+
+`if @score_t5 == 2`
+
+- **Vivre dans la société française : 2/5, soit 40 %**. Cette thématique doit être renforcée en priorité.
+
+`endif`
+
+`if @score_t5 == 1`
+
+- **Vivre dans la société française : 1/5, soit 20 %**. Cette thématique fait partie de vos priorités principales.
+
+`endif`
+
+`if @score_t5 == 0`
+
+- **Vivre dans la société française : 0/5**. Commencez vos révisions par cette thématique afin d'en acquérir les bases.
+
+`endif`
+
+### 🎯 Votre prochain objectif
+
+`if @score < 10`
+
+Votre prochain objectif est d'atteindre **10/25**.
+
+`endif`
+
+`if @score >= 10 && @score < 15`
+
+Votre prochain objectif est d'atteindre **15/25**.
+
+`endif`
+
+`if @score >= 15 && @score < 20`
+
+Votre prochain objectif est d'atteindre **20/25**.
+
+`endif`
+
+`if @score >= 20 && @score < 23`
+
+Votre objectif est maintenant de **maintenir un score d'au moins 20/25** lors de plusieurs entraînements.
+
+`endif`
+
+`if @score >= 23`
+
+Votre objectif est de **conserver cet excellent niveau jusqu'au jour de l'examen**.
+
+`endif`
+
+### 📋 Mes recommandations
+
+`if @score < 15`
+
+#### 🌱 Profil : début de parcours
+
+Ce résultat constitue un point de départ. Il est normal que plusieurs notions soient encore nouvelles.
+
+1. Consultez le Guide de réussite.
+2. Révisez d'abord les thématiques prioritaires.
+3. Réalisez quelques entraînements ciblés.
+4. Refaites ensuite un bilan pour mesurer vos progrès.
+
+💬 **Mon conseil :** avancez une étape après l'autre.
+
+1. [📅 Consulter le parcours de révision conseillé](CR25_GUIDE)
+
+`endif`
+
+`if @score >= 15 && @score < 20`
+
+#### 🎯 Profil : en progression
+
+Vous possédez déjà de bonnes bases. Des révisions ciblées sur les thématiques les moins maîtrisées vous permettront de franchir un nouveau cap.
+
+1. Renforcez les thématiques prioritaires.
+2. Réalisez des entraînements ciblés.
+3. Passez ensuite un examen blanc.
+4. Refaites un bilan pour vérifier votre progression.
+
+💬 **Mon conseil :** continuez sur cette lancée, vous êtes sur la bonne voie.
+
+`endif`
+
+`if @score >= 20`
+
+#### 🏆 Profil : prêt à consolider
+
+Excellent travail ! Vous maîtrisez déjà une grande partie du programme.
+
+Il reste surtout à consolider vos acquis grâce à des entraînements variés afin d'être parfaitement prêt le jour de l'examen. Il est maintenant temps de vous entraîner aux mises en situation.
+
+1. Continuez les entraînements variés.
+2. Réalisez plusieurs examens blancs.
+3. Entraînez-vous avec les mises en situation.
+4. Refaites un bilan pour vérifier la stabilité de votre niveau.
+
+💬 **Mon conseil :** entretenez régulièrement vos connaissances jusqu'au jour de l'examen.
 
 `endif`
 
@@ -1092,21 +1233,17 @@ Nous vous recommandons de suivre le parcours proposé dans le fichier `GUIDE_REU
 
 1. [📚 Réviser les thématiques prioritaires](CR25_REVISIONS)
 2. [🔁 Refaire le bilan](CR25_ACCUEIL)
-3. [🏠 Retour à l’accueil]()
+3. [🏠 Retour à l'accueil]()
 
 ## CR25_GUIDE
 
 ### 📅 Parcours de révision conseillé
 
-Le Guide de réussite recommande :
-
-1. travailler une thématique à la fois ;
-2. consulter les notions essentielles ;
-3. réaliser un entraînement thématique ;
-4. noter les erreurs ;
-5. refaire un bilan après plusieurs séances.
-
-Dans la version finale, ce bouton ouvrira directement le chapitre correspondant de `GUIDE_REUSSITE.md`.
+1. Travaillez une thématique à la fois.
+2. Consultez les notions essentielles.
+3. Réalisez un entraînement thématique.
+4. Notez vos erreurs.
+5. Refaites un bilan après plusieurs séances.
 
 1. [⬅️ Retour à mon bilan](CR25_BILAN)
 
@@ -1114,8 +1251,8 @@ Dans la version finale, ce bouton ouvrira directement le chapitre correspondant 
 
 ### 📚 Révisions prioritaires
 
-Commencez par les thématiques obtenant **0, 1 ou 2 points sur 5**.
+Commencez par les thématiques dans lesquelles vous avez obtenu **0, 1 ou 2 points sur 5**.
 
-Dans la version finale, les recommandations ouvriront directement les chapitres correspondants.
+Les recommandations ouvriront ensuite directement les chapitres correspondants dans la version finale.
 
 1. [⬅️ Retour à mon bilan](CR25_BILAN)
